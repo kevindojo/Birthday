@@ -1,18 +1,26 @@
-var daysUntilMyBirthday = 70;
+//function WhileYouWait(daysUntilMyBirthday)
+
+// var daysUntilMyBirthday =60;
+var msg = " days until my birthday."
+var long = " Such a long time!"
+var short = " Almost my birthday!!"
+var five = " DAYS UNTIL MY BIRTHDAY!"
+
+for(var daysUntilMyBirthday = 60; daysUntilMyBirthday >= 0; daysUntilMyBirthday--)
 
 if(daysUntilMyBirthday > 30)
 {
-    console.log("such a looong time till my birthday... =[");
+    console.log(daysUntilMyBirthday + msg + long);
 }
-if(daysUntilMyBirthday <= 30)
+else if(daysUntilMyBirthday <= 30 && daysUntilMyBirthday !==0 && daysUntilMyBirthday >5)
 {
-    console.log("almost my birthday!");
+    console.log(daysUntilMyBirthday + msg + short);
 }
-if(daysUntilMyBirthday < 5)
+else if(daysUntilMyBirthday <=5 && daysUntilMyBirthday > 0)
 {
-    console.log("JUST 5 MORE DAYS");
+    console.log(daysUntilMyBirthday +five);
 }
-if(daysUntilMyBirthday = 0)
+else if(daysUntilMyBirthday == 0);
 {
-    console.log("IT'S MY BIRTHDAY!!");
+    console.log("Happy birthday!");
 }
